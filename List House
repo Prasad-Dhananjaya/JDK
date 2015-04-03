@@ -1,0 +1,23 @@
+package org.datastructure.com;
+import java.io.Console;
+//import java.io.Console;
+import java.util.List;
+import java.util.Vector;
+
+import javax.swing.table.DefaultTableModel;
+//import java.util.Vector;
+
+//import javax.jws.Oneway;
+//import javax.swing.table.DefaultTableModel;
+
+//import com.ibm.icu.impl.locale.AsciiUtil;
+
+
+public class ListHouse extends javax.swing.JDialog {
+	
+	/*String  FirstNameLH;
+	String  lastNameLH;
+	String  lotNumberLH;
+	String  priceLH;
+	String  squareFeetLH;
+	String  numberOfBedRoomsLH;*/
