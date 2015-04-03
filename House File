@@ -4,6 +4,10 @@
  *	UCD ID		Name
  *	----------	----------------------------------------------------------------------------
  *	14208913	Pemaththu Hewage Prasad Dhananjaya Gamlath
+ *	14210143	Chathuri Anuththara Karunarathna
+ *	14209043	Pramod Kasun Anuradha De Thabrew
+ *	14209044	Kaluhath Harshana Suranga Thabrew
+ *	14210144	Purage Hansani Ishari Udayangani
  */
  
  
@@ -64,4 +68,77 @@ public class House  {
 		this.numberOfBedRooms = numberOfBedRooms;
 	}
 	
+	public List<House> readFile() {
+        List<House> houses = new ArrayList<>();
+        
+        try {
+            BufferedReader br = new BufferedReader(new FileReader("HouseDetails"));
+
+            String line;
+            while ((line = br.readLine()) != null) {
+//              System.out.println("line " + line);
+                String[] rows = line.split("\t");
+//              System.out.println("rows " + Arrays.toString(rows));
+
+                House house = new House();
+                house.setLotNumber(rows[0]);
+                house.setFirstName(rows[1]);
+                house.setLastName(rows[2]);
+                house.setPrice(rows[3]);
+                house.setSquareFeet(rows[4]);
+                house.setNumberOfBedRooms(rows[5]);
+
+                houses.add(house);
+            }
+
+        } catch (FileNotFoundException e) {
+            if (e.getMessage().equals("HouseData (The system cannot find the file specified)")) {
+                BufferedWriter output = null;
+                try {
+                    File file = new File("HouseDetails");
+                    output = new BufferedWriter(new FileWriter(file));
+                } catch (IOException ex) {
+                    Logger.getLogger(House.class.getName()).log(Level.SEVERE, null, ex);
+                } finally {
+                    try {
+                        if (output != null) {
+                            output.close();
+                        }
+                    } catch (IOException ex) {
+                        Logger.getLogger(House.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+            }
+        } catch (IOException ex) {
+            Logger.getLogger(House.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        return houses;
+    }
+
+    public void saveHouseFile(House house) {
+        try {
+            FileWriter fw = new FileWriter("HouseDetails", true);
+            fw.write(house.getLotNumber() + "\t" + house.getFirstName() + "\t" + house.getLastName() + "\t" + house.getPrice() + "\t" + house.getSquareFeet() + "\t" + house.getNumberOfBedRooms() + "\n");            fw.close();
+        } catch (IOException ioe) {
+            System.out.println(ioe.getMessage());
+        }
+    }
+    
+     public void saveHouseList(List<House> house) {
+        String text = "";
+        for (House h : house) {
+            text += h.getLotNumber() + "\t" + h.getFirstName() + "\t" + h.getLastName() + "\t" + h.getPrice() + "\t" + h.getSquareFeet() + "\t" + h.getNumberOfBedRooms() + "\n";
+        }
+        try {
+            BufferedWriter output = null;
+            File file = new File("HouseDetails");
+            output = new BufferedWriter(new FileWriter(file));
+            output.write(text);
+            output.close();
+        } catch (IOException ioe) {
+            System.out.println(ioe.getMessage());
+        }
+    }
+}
 }
