@@ -72,12 +72,6 @@ public class RealEstate extends javax.swing.JFrame{
             house.setNumberOfBedRooms(textNumberOfBedRooms.getText());
             house.setPrice(textPrice.getText());
             house.setSquareFeet(textSquareFeet.getText());
-            /*
-            house.setLotNumber(Long.parseLong(textLotNumber.getText()));
-            house.setNoOfBedroom(Integer.parseInt(textNumberOfBedRooms.getText()));
-            house.setPrice(Long.parseLong(textPrice.getText()));
-            house.setSquareFeet(Long.parseLong(textSquareFeet.getText()));
-            */
             
             Boolean bol = false;
             houses = new House().readFile();
