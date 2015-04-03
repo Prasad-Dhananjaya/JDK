@@ -1,0 +1,20 @@
+package org.datastructure.com;
+import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import org.datastructure.com.House;
+
+//import org.eclipse.swt.widgets.Text;
+
+
+public class House  {
+	
+	String  FirstName;
+	String  lastName;
+	String  lotNumber;
+	String  price;
+	String  squareFeet;
+	String  numberOfBedRooms;
