@@ -20,6 +20,7 @@ public class House  {
 	String  lastName;
 	String  lotNumber;
 	String  price;
-
+	String  squareFeet;
+	String  numberOfBedRooms;
 	
 }
