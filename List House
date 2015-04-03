@@ -80,6 +80,7 @@ public class ListHouse extends javax.swing.JDialog {
                 return canEdit [columnIndex];
             }
         });
+        
         jScrollPane1.setViewportView(jTable1);
         if (jTable1.getColumnModel().getColumnCount() > 0) {
             jTable1.getColumnModel().getColumn(0).setResizable(false);
@@ -102,7 +103,6 @@ public class ListHouse extends javax.swing.JDialog {
         );
 
         pack();
-        
     }
 
     // Variables declaration - do not modify
