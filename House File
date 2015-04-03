@@ -30,7 +30,6 @@ public class House  {
 	String  squareFeet;
 	String  numberOfBedRooms;
 	
-		
 	public String getLotNumber() {
 		return lotNumber;
 	}
@@ -76,9 +75,7 @@ public class House  {
 
             String line;
             while ((line = br.readLine()) != null) {
-//              System.out.println("line " + line);
                 String[] rows = line.split("\t");
-//              System.out.println("rows " + Arrays.toString(rows));
 
                 House house = new House();
                 house.setLotNumber(rows[0]);
@@ -119,8 +116,7 @@ public class House  {
     public void saveHouseFile(House house) {
         try {
             FileWriter fw = new FileWriter("HouseDetails", true);
-            fw.write(house.getLotNumber() + "\t" + house.getFirstName() + "\t" + house.getLastName() + "\t" + house.getPrice() + "\t" + house.getSquareFeet() + "\t" + house.getNumberOfBedRooms() + "\n");            fw.close();
-        } catch (IOException ioe) {
+            fw.write(house.getLotNumber() + "\t" + house.getFirstName() + "\t" + house.getLastName() + "\t" + house.getPrice() + "\t" + house.getSquareFeet() + "\t" + house.getNumberOfBedRooms() + "\n");            fw.close();        } catch (IOException ioe) {
             System.out.println(ioe.getMessage());
         }
     }
