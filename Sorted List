@@ -9,5 +9,23 @@ package org.datastructure.com;
 import java.util.List;
 
 public class SortedList{
+private List<House> houses;
 
+    public void setHouses(List<House> houses) {
+        this.houses = houses;
+    }
+
+    public List<House> getShortHouses() {
+
+        for (int i = houses.size()-1; i >=0; i--) {
+            for (int j = 0; j < houses.size()-1; j++) {
+                if (Long.parseLong(houses.get(j).getLotNumber()) > Long.parseLong(houses.get(j+1).getLotNumber())) {
+                    House house = houses.get(j);
+                    houses.set(j, houses.get(j+1));
+                    houses.set(j+1, house);
+                }
+            }
+        }
+        return houses;
+    }
 }
