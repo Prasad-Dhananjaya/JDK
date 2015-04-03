@@ -22,4 +22,5 @@ public class House  {
 	String  price;
 	String  squareFeet;
 	String  numberOfBedRooms;
+	
 }
