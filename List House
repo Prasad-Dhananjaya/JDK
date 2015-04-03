@@ -32,17 +32,15 @@ public class ListHouse extends javax.swing.JDialog {
         
         for(House h: houses){
             Vector v = new Vector();
-            v.add(h.getLotNumber());// + "");
+            v.add(h.getLotNumber());
             v.add(h.getFirstName());
-            v.add(h.getLastName());// + "");
-            v.add(h.getPrice());//+ "");
-            v.add(h.getSquareFeet());// + "");
-            v.add(h.getNumberOfBedRooms());// + "");
-            //System.out.println(v.firstElement());
+            v.add(h.getLastName());
+            v.add(h.getPrice());
+            v.add(h.getSquareFeet());
+            v.add(h.getNumberOfBedRooms());
             df.addRow(v);
         }
-        
-	}
+     }
 	
 	
 	
