@@ -185,7 +185,6 @@ public class RealEstate extends javax.swing.JFrame{
 				}
 		});
 		
-		
 		btnAdd.setFont(SWTResourceManager.getFont("Segoe UI", 11, SWT.BOLD));
 		btnAdd.setText("Add");
 		btnAdd.setBounds(0, 410, 216, 40);
