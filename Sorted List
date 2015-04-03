@@ -12,7 +12,7 @@ package org.datastructure.com;
 import java.util.List;
 
 public class SortedList{
-private List<House> houses;
+   private List<House> houses;
 
     public void setHouses(List<House> houses) {
         this.houses = houses;
