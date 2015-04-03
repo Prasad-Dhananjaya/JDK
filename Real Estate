@@ -43,7 +43,28 @@ import org.eclipse.swt.graphics.Point;
 public class RealEstate extends javax.swing.JFrame{
 	
 	
+	public static Text textLotNumber;
+	public static Text textFirstName;
+	public static Text textLastName;
+	public static Text textPrice;
+	public static Text textSquareFeet;
+	public static Text textNumberOfBedRooms;
+
+	private static Label lblNextHouseDisplayed;
+	private static Label lblLotNumber;
+	private static Label lblFirstNumber;
+	private static Label lblLastName;
+	private static Label lblPrice;
+	private static Label lblSquareFeet;
+	private static Label label;
 	
+	private static Button btnReset;
+	private static Button btnNext;
+	private static Button btnAdd;
+	private static Button btnDelete;
+	private static Button btnSortedList;
+	private static Button btnFind;
+	      
 	
 	
 	private List<House> houses;
