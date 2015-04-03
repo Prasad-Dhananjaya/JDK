@@ -63,4 +63,5 @@ public class House  {
 	public void setNumberOfBedRooms(String numberOfBedRooms) {
 		this.numberOfBedRooms = numberOfBedRooms;
 	}
+	
 }
