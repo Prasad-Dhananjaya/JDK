@@ -19,7 +19,6 @@ private List<House> houses;
     }
 
     public List<House> getShortHouses() {
-
         for (int i = houses.size()-1; i >=0; i--) {
             for (int j = 0; j < houses.size()-1; j++) {
                 if (Long.parseLong(houses.get(j).getLotNumber()) > Long.parseLong(houses.get(j+1).getLotNumber())) {
