@@ -10,7 +10,7 @@
  *	14210144	Purage Hansani Ishari Udayangani
  */ 
  
- 
+
 package org.datastructure.com;
 import java.io.Console;
 import java.util.List;
@@ -20,9 +20,9 @@ import javax.swing.table.DefaultTableModel;
 
 public class ListHouse extends javax.swing.JDialog {
      public ListHouse(java.awt.Frame parent, boolean modal,List<House> houses){
-		super(parent, modal);
-		initComponents();
-		setLocationRelativeTo(null);
+	super(parent, modal);
+	initComponents();
+	setLocationRelativeTo(null);
         
         SortedList sl = new SortedList();
         sl.setHouses(houses);
