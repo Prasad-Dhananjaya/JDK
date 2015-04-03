@@ -10,12 +10,12 @@
  *	   14210144	     Purage Hansani Ishari Udayangani
  */ 
  
- 
 package org.datastructure.com;
 
 import java.util.List;
 
 public class SortedList{
+
    private List<House> houses;
 
     public void setHouses(List<House> houses) {
