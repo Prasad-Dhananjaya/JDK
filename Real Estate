@@ -24,7 +24,6 @@ import javax.swing.JOptionPane;
 
 
 
-//import org.eclipse.swt.widgets.Decorations;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Label;
@@ -37,7 +36,6 @@ import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.widgets.Table;
 import org.eclipse.jface.viewers.TableViewer;
 import org.eclipse.swt.graphics.Point;
-//import org.omg.CORBA.Object;
 
 
 public class RealEstate extends javax.swing.JFrame{
